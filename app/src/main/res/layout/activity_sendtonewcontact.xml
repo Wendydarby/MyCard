@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+
+              tools:context="com.wendydarby.mycard.sendActivity"
+              android:gravity="top">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorAccent"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/newcontactname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:hint="@string/prompt_contactname"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:inputType="textNoSuggestions"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:textIsSelectable="false"
+                android:textStyle="bold"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorAccent"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/contact_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/colorAccent"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textIsSelectable="false"
+                android:textStyle="bold"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorAccent"
+            >
+
+            <EditText
+                android:id="@+id/contact_mobile"
+                android:textSize="25sp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:imeOptions="actionNext"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_mobile"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textStyle="bold"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorAccent"
+            >
+
+            <EditText
+                android:id="@+id/contact_event"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp"
+                android:textColorHint="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_event"
+                android:imeActionId="@integer/register_form_finished"
+                android:imeActionLabel="@string/action_send"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textLongMessage"
+                android:maxLines="1"
+                android:textStyle="bold"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sendcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:visibility="visible"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
+</LinearLayout>

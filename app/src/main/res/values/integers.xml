@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="recyclerview" type="id" />
-
+    <integer name="register_form_finished">1</integer>
 </resources>

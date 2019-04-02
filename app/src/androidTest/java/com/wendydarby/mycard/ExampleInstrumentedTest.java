@@ -1,4 +1,4 @@
-package com.wendydarby.mycard2;
+package com.wendydarby.mycard;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.wendydarby.mycard2", appContext.getPackageName());
+        assertEquals("com.wendydarby.mycard", appContext.getPackageName());
     }
 }

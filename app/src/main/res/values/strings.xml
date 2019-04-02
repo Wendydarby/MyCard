@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">MyCard2</string>
+    <string name="app_name">MyCard</string>
     <string name="webview_description">users electronic business card</string>
+    <string name="prompt_email">email</string>
+    <string name="prompt_mobile">mobile</string>
+    <string name="action_send">Sending electronic budiness card.</string>
+    <string name="prompt_event">What event did you meet at?</string>
+    <string name="prompt_contactname">New Contact Name</string>
+    <string name="ecard_URL">\"https://ClickMy.info/i/8lGZ/Wendy_Darby\"</string>
 </resources>

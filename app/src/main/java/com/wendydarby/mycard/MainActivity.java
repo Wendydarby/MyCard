@@ -1,6 +1,7 @@
-package com.wendydarby.mycard2;
+package com.wendydarby.mycard;
 
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -10,11 +11,13 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+
+
 public class MainActivity extends AppCompatActivity {
     private FloatingActionButton mSendButton;
     private FloatingActionButton mBackButton;
     private WebView mWebView;
-
+    static public String ECARD_URL = "https://ClickMy.info/i/8lGZ/Wendy_Darby";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,16 +27,11 @@ public class MainActivity extends AppCompatActivity {
         mWebView = findViewById(R.id.webview);
         mWebView.setWebViewClient(new MyWebClient());
         mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.loadUrl("https://ClickMy.info/i/8lGZ/Wendy_Darby");
+        // I liked 200 for landscape view
+        mWebView.setInitialScale(230);
+        mWebView.loadUrl(ECARD_URL);
 
         mSendButton = (FloatingActionButton) findViewById(R.id.send);
-
-
-
-        //TODO see if you can scale the webcontent to the screen
-
-
-
 
         //TODo implement the send button to bring up New COntact View
         mSendButton.setOnClickListener(new View.OnClickListener() {
@@ -41,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("MyCard", "Let's share content with user!");
                 //Change to new textview for entering info.
-//                Intent intent = new Intent(MainActivity.this, SendCardActivity.class);
-//                finish();
-//                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, com.wendydarby.mycard.sendActivity.class);
+                finish();
+                startActivity(intent);
             }
         });
 

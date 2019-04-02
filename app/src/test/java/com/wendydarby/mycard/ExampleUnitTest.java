@@ -1,4 +1,4 @@
-package com.wendydarby.mycard2;
+package com.wendydarby.mycard;
 
 import org.junit.Test;
 
