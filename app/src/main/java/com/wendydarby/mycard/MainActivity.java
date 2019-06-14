@@ -31,9 +31,24 @@ public class MainActivity extends AppCompatActivity {
         mWebView.setInitialScale(230);
         mWebView.loadUrl(ECARD_URL);
 
-        mSendButton = (FloatingActionButton) findViewById(R.id.send);
+        mSendButton = findViewById(R.id.send);
+// Placing wishlist of feature ideas here even if they should be implemented elsewhwere so that the list can be easily curated.
+        //TODo look into searching for MyCard contacts on Linked In and asking user if he/she
+        // wants to automatically link with them on LinkedIn
 
-        //TODo implement the send button to bring up New COntact View
+        //TODO look into using the camera to auto populate the email and  phone fields from a business card
+
+        //TODO allow multiple e-cards to be shown and user to select
+
+        //TODO allow configuration so new users(not Wendy) can use
+        //TODO in a Premium version allow outgoing messages to be customized and LinkedIn feature to be enabled
+        //TODO premium feature, allow reminders to be set for followup in 3 days, or chosen time frame
+
+
+        //TODO create an android wear app that allows new contacts to be created and ecard be sent from Gear
+        //TODO allow user to store info in their preffered CRM - look into automating a batch export/import or forwarding an intnet
+        //Look into creating my own user accounts on Firbase and setting up my own ecard creator.
+
         mSendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //Todo disable the back button if main url is shown, if the user has navicated forward enable button to go back.
+        //Todo disable the back button if main url is shown, if the user has navigated forward enable button to go back.
 
 
     }
