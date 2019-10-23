@@ -4,8 +4,8 @@ package com.wendydarby.mycard;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
@@ -13,11 +13,11 @@ import android.webkit.WebViewClient;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class MyCardView extends AppCompatActivity {
     private FloatingActionButton mSendButton;
     private FloatingActionButton mBackButton;
     private WebView mWebView;
-    static public String ECARD_URL = "https://ClickMy.info/i/8lGZ/Wendy_Darby";
+    private MyCard mMyCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mWebView.getSettings().setJavaScriptEnabled(true);
         // I liked 200 for landscape view
         mWebView.setInitialScale(230);
-        mWebView.loadUrl(ECARD_URL);
+        mWebView.loadUrl(mMyCard.getEcardUrl());
 
         mSendButton = findViewById(R.id.send);
 // Placing wishlist of feature ideas here even if they should be implemented elsewhwere so that the list can be easily curated.
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("MyCard", "Let's share content with user!");
                 //Change to new textview for entering info.
-                Intent intent = new Intent(MainActivity.this, com.wendydarby.mycard.sendActivity.class);
+                Intent intent = new Intent(MyCardView.this, NewContactView.class);
                 finish();
                 startActivity(intent);
             }

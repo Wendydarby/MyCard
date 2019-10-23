@@ -10,12 +10,12 @@
               android:paddingRight="@dimen/activity_horizontal_margin"
               android:paddingTop="@dimen/activity_vertical_margin"
 
-              tools:context="com.wendydarby.mycard.sendActivity"
+              tools:context="com.wendydarby.mycard.NewContactView"
               android:gravity="top">
 
 
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/colorAccent"
@@ -35,9 +35,9 @@
                 android:textIsSelectable="false"
                 android:textStyle="bold"/>
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/colorAccent"
@@ -57,9 +57,9 @@
                 android:textIsSelectable="false"
                 android:textStyle="bold"/>
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/colorAccent"
@@ -78,9 +78,9 @@
                 android:maxLines="1"
                 android:textStyle="bold"/>
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/colorAccent"
@@ -101,9 +101,9 @@
                 android:maxLines="1"
                 android:textStyle="bold"/>
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/sendcontact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

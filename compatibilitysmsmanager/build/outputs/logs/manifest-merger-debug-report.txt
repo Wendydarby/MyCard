@@ -1,0 +1,23 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml:17:1-27:12
+	package
+		ADDED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml:18:5-27
+		INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml:20:5-30
+		INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml:17:11-69
+	android:versionCode
+		ADDED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml:19:5-28
+		INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\hdarby\Projects\GitHub\MyCard\compatibilitysmsmanager\src\main\AndroidManifest.xml

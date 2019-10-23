@@ -1,0 +1,2 @@
+se.anyro.sms
+string app_name

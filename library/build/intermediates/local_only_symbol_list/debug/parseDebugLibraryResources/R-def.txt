@@ -1,0 +1,4 @@
+R_DEF: Internal format may change without notice
+local
+string esdk_loading
+string esdk_switch_to
