@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.wendydarby.mycard.MyCardView">
+        <activity android:name="com.wendydarby.mycard.view.MyCardView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +22,7 @@
         </activity>
 
         <activity
-            android:name="com.wendydarby.mycard.NewContactView"
+            android:name="com.wendydarby.mycard.view.NewContactView"
             android:screenOrientation="portrait">
         </activity>
     </application>

@@ -1,4 +1,4 @@
-package com.wendydarby.mycard;
+package com.wendydarby.mycard.controller;
 
 import android.Manifest;
 import android.content.ActivityNotFoundException;
@@ -11,6 +11,10 @@ import androidx.core.content.ContextCompat;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.wendydarby.mycard.model.MyCard;
+import com.wendydarby.mycard.model.NewContact;
+import com.wendydarby.mycard.view.NewContactView;
+
 import se.anyro.sms.CompatibilitySmsManager;
 
 
@@ -21,7 +25,7 @@ public class NewContactController {
         public static final int MY_PERMISSIONS_REQUEST_SEND_SMS =0 ;
 
     public NewContactController(NewContact model, NewContactView view, MyCard mECard) {
-        this.mNewContact =model;
+        this.mNewContact = model;
         this.mContactView = view;
         this.mMyCard = mECard;
     }
@@ -117,6 +121,9 @@ public class NewContactController {
                 Toast.makeText(this.mContactView.getApplicationContext(), "sendSMSMessage checked permissions. Should show Request Perm Rationale.",
                         Toast.LENGTH_LONG).show(); //I removed Perms and not seeing the request to user.
                 //HAL HELP - test case where user remover SMS permissions in settings. I never see the request for permission come up..it looks like the listener fires in debugger but It doesn't step through it jumps back from sendSMSMessage;
+
+                // TODO: This needs to do a thing...
+
             } else {
                 ActivityCompat.requestPermissions(this.mContactView,
                         new String[]{Manifest.permission.SEND_SMS},

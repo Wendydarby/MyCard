@@ -1,9 +1,12 @@
-package com.wendydarby.mycard;
+package com.wendydarby.mycard.view;
 
 
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
+
+import com.wendydarby.mycard.R;
+import com.wendydarby.mycard.view.MyCardView;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
@@ -14,6 +17,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import androidx.test.espresso.ViewInteraction;
+import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.filters.LargeTest;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.rule.GrantPermissionRule;
@@ -22,11 +26,9 @@ import androidx.test.runner.AndroidJUnit4;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
-import static androidx.test.espresso.action.ViewActions.longClick;
 import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
@@ -49,7 +51,7 @@ public class MyCardViewSMSOnlySentTest {
         ViewInteraction textView = onView(
                 allOf(withText("MyCard"),
                         childAtPosition(
-                                allOf(withId(R.id.action_bar),
+                                allOf(ViewMatchers.withId(R.id.action_bar),
                                         childAtPosition(
                                                 withId(R.id.action_bar_container),
                                                 0)),

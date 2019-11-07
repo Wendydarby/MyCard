@@ -1,10 +1,13 @@
-package com.wendydarby.mycard;
+package com.wendydarby.mycard.view;
 
 
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.wendydarby.mycard.R;
+import com.wendydarby.mycard.model.MyCard;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;

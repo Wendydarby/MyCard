@@ -1,4 +1,6 @@
-package com.wendydarby.mycard;
+package com.wendydarby.mycard.model;
+
+import com.wendydarby.mycard.model.MyCard;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -7,7 +9,6 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 //import static org.hamcrest.beans.HasPropertyWithValue.hasProperty;
 import static org.junit.Assert.assertNotNull;

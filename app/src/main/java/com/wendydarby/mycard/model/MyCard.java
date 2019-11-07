@@ -1,4 +1,4 @@
-package com.wendydarby.mycard;
+package com.wendydarby.mycard.model;
 
 public class MyCard {
     public MyCard() {

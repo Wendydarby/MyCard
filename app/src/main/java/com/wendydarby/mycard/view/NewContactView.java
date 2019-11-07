@@ -1,4 +1,4 @@
-package com.wendydarby.mycard;
+package com.wendydarby.mycard.view;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -7,6 +7,11 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.wendydarby.mycard.controller.NewContactController;
+import com.wendydarby.mycard.R;
+import com.wendydarby.mycard.model.MyCard;
+import com.wendydarby.mycard.model.NewContact;
+
 import androidx.appcompat.app.AppCompatActivity;
 //import android.telephony.SmsManager;
 

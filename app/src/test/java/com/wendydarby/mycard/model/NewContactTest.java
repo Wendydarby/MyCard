@@ -1,4 +1,6 @@
-package com.wendydarby.mycard;
+package com.wendydarby.mycard.model;
+
+import com.wendydarby.mycard.model.NewContact;
 
 import org.junit.After;
 import org.junit.Before;
